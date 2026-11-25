@@ -136,6 +136,7 @@ public String getIdReto() {
     }
 	
 	// Metodo 2
+	
         
         public boolean verificacionRespuesta(char opcionElegida) {
         	
@@ -154,6 +155,7 @@ public String getIdReto() {
 		
         	
         }
+        
 	// METODOS 
 	public Reto_Teorico() {
 	
