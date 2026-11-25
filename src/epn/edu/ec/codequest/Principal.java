@@ -21,38 +21,49 @@ public class Principal {
 		// codigo para iniciar el Acanner 
 		
 		Scanner sc= new Scanner(System.in);
-		System.out.println("-----------------------------------------");
-		System.out.println("           Bienvenido a CodeQuest        ");
-		System.out.println("-----------------------------------------");
+		
+		System.out.println("----------------------------------------------------------------------");
+		System.out.println("                         Bienvenido a CodeQuest                       ");
+		System.out.println("----------------------------------------------------------------------");
+		System.out.println(" ");
+		System.out.println(" ");
+		System.out.println("====> Pon a prueba tu lógica y descubre tu ruta de aprendizaje!! <===");
+		System.out.println(" ");
+		System.out.println(" ");
 
 		// Vamos a crear un perfil usando la clase 1
 		
-		Estudiante Alumno1=new Estudiante("Anderson Quilumbquin","202420870","anderson.quilumbaquin@epn.edu.ec",4,0);
+		System.out.println("Por favor ingrese su nombre: ");
+		String nombre= sc.nextLine();
+		
+		System.out.println("Por favor ingrese su Codigo Unico: ");
+		String codigoUnico= sc.nextLine();
+		
+		System.out.println("Por favor ingrese su correo electronico: ");
+		String correo= sc.nextLine();
+		
+		System.out.println("Por favor ingrese el semestre en el que se encuentra: ");
+		int Semestre= sc.nextInt();
+		sc.nextLine();
+		
+		
+		Estudiante Alumno1=new Estudiante(nombre,codigoUnico,correo,Semestre,0);
 		
 		// Iniciando Prueba Diagnostica antes de presentar el perfil
 		System.out.println("\n--- INICIANDO EVALUACIÓN DIAGNÓSTICA ---");
         System.out.println("Responde ingresando el número de la opción correcta:\n");
         System.out.println(" ");
-        System.out.println("Pregunta 1: ¿Qué tipo de dato usarías para guardar tu semestre actual como una variable de programacion?");
-        System.out.println("1) double\n 2) int\n 3) String");
-        System.out.print("Tu respuesta: ");
-        int respuesta1= sc.nextInt();
-        System.out.println(" ");
-        System.out.println("Pregunta 2: ¿Qué tipo de Lazo o bucle usarias para que el copilador lo ejecute almenos una vez?");
-        System.out.println("1) for \n 2) while\n 3) Do-While");
-        System.out.print("Tu respuesta: ");
-        int respuesta2= sc.nextInt();
-        System.out.println(" ");
-        System.out.println("Pregunta 3: ¿Con qué palabra reservada se crea un objeto en Java?");
-        System.out.println("1) class \n 2) new\n 3) make");
-        System.out.print("Tu respuesta: ");
-        int respuesta3= sc.nextInt();
+        
+        
+       
+        
+        //============================METODO PARA LA PD=========================
 		
-		Alumno1.procesar_Respuestas(respuesta1,respuesta2,respuesta3);
-		
+        Alumno1.evaluacionDiagnostica(sc);
+	
 		Alumno1.mostrarPerfil();
 		
-	
+	//======================================================================================
 		// a continuacion el modulo academico 
 		Modulo_Academico modulo1= new Modulo_Academico("Fundamentos de Programación Estructurada","Las variables son como recipientes de cocina...");
 		
