@@ -162,4 +162,69 @@ public String getIdReto() {
 		// TODO Auto-generated constructor stub
 	}
 
+
+
+    public void verificacionRespuesta(String nivelEstudiante, char[] respuestasUsuario) {
+   	 
+    	int contadorRespuestas=0;
+    	
+    	switch(nivelEstudiante) {
+    	
+    	case "Principiante":
+    		char[] respuestasValidasB= {'A', 'B', 'C', 'A', 'B', 'C', 'A', 'B', 'C', 'A'};
+    		
+    		for(int i=0;i<respuestasValidasB.length;i++) {
+    			
+    			if (respuestasValidasB[i]==respuestasUsuario[i]) {
+    				System.out.println((i+1)+" Pregunta: Respuesta Valida ^_^" );
+    				contadorRespuestas++;
+    			}else {
+    				System.out.println((i+1)+" Pregunta: Respuesta Invalida T_T" );
+    			}
+    			
+    		}
+    		
+    		break;
+    		
+    	
+    	case "Intermedio":
+    		
+    		char[] respuestasValidasI= {'A', 'B', 'C', 'A', 'B', 'C', 'A', 'B', 'C', 'A'};
+    			for(int i=0;i<respuestasValidasI.length;i++) {
+    			
+    			if (respuestasValidasI[i]==respuestasUsuario[i]) {
+    				System.out.println((i+1)+" Pregunta: Respuesta Valida ^_^" );
+    				contadorRespuestas++;
+    			}else {
+    				System.out.println((i+1)+" Pregunta: Respuesta Invalida T_T" );
+    			}
+    			
+    		}
+    		
+        	break;
+        	
+        	
+    	case "Avanzado":
+    		char[] respuestasValidasA= {'A', 'B', 'C', 'A', 'B', 'C', 'A', 'B', 'C', 'A'};
+    		
+    			for(int i=0;i<respuestasValidasA.length;i++) {
+    			
+    			if (respuestasValidasA[i]==respuestasUsuario[i]) {
+    				System.out.println((i+1)+" Pregunta: Respuesta Valida ^_^" );
+    				contadorRespuestas++;
+    			}else {
+    				System.out.println((i+1)+" Pregunta: Respuesta Invalida T_T" );
+    			}
+    			
+    		}
+    		
+        	break;
+    	
+    	
+    	}
+    	
+	
+    	
+    }
+
 }

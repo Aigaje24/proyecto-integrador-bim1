@@ -69,7 +69,7 @@ public class Principal {
 		
 		// llamamos a los modulos 
 		
-		modulo1.rutaDeAprendizaje(Alumno1.getNivelConocimiento());
+		modulo1.rutaDeAprendizaje(Alumno1.getNivelConocimiento(),sc);
 		modulo1.retos(Alumno1.getNivelConocimiento());
 		
 		Reto_Teorico reto1=new Reto_Teorico("1", "For(int i=0:i<5:i++)", "El bucle presenta un comportamiento? ", new String[]{"Ascencion", "Disminucion", "No hace nada "},
