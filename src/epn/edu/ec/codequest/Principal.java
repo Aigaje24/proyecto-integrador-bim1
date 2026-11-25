@@ -72,19 +72,12 @@ public class Principal {
 		modulo1.rutaDeAprendizaje(Alumno1.getNivelConocimiento(),sc);
 		modulo1.retos(Alumno1.getNivelConocimiento());
 		
-		Reto_Teorico reto1=new Reto_Teorico("1", "For(int i=0:i<5:i++)", "El bucle presenta un comportamiento? ", new String[]{"Ascencion", "Disminucion", "No hace nada "},
-				'A', false);
-		 reto1.mostrarPregunta();
+		
 		 // para ingresar con scanner variables tipo char no nos sirve el primer codigo usamos el siguiente 
 		 
-		 java.util.Scanner entradaModulo = new java.util.Scanner(System.in);
 		 
 		 
 		 
-		 System.out.println("Por favor Ingresa tu respuesta (A, B o C):");
-		 char respuesta= entradaModulo.next().charAt(0);;
-		 
-		 reto1.verificacionRespuesta(respuesta);
 		
 		// considerando que es solo un peque;o avance no lo hacemos tan complejo todavia 
 		 
